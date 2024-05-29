@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/books")
-
 public class BookController {
 
 
@@ -21,6 +20,12 @@ public class BookController {
     @GetMapping("/get-all-books")
     public List<Book> getAllBooks(){
         return  bookService.getAllBooks();
+
+    }
+
+    @GetMapping("/welcome")
+    public String welcome(){
+        return  "Hello World";
 
     }
 

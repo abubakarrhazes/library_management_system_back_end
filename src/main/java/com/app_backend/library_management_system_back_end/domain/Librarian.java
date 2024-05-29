@@ -4,6 +4,10 @@ package com.app_backend.library_management_system_back_end.domain;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
 import java.util.Date;
@@ -12,6 +16,10 @@ import java.util.Set;
 
 @Entity
 @Table(name = "librarians")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Librarian {
 
     @Id

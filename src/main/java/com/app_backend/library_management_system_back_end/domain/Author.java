@@ -2,14 +2,22 @@ package com.app_backend.library_management_system_back_end.domain;
 
 // Author.java
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "authors")
+@AllArgsConstructor
+@Setter
+@Getter
+@NoArgsConstructor
 public class Author {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long authorId;
@@ -29,5 +37,6 @@ public class Author {
 
     // Getters and setters
     // (Add all getters and setters here)
+
 }
 
